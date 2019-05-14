@@ -36,7 +36,7 @@ public class TestDeposit {
 		double expected = (198178 * Math.pow(1 + 0.03, 40));
 
 		when(userA.depositAmount()).thenReturn(198178);
-		when(userA.depositInterest(aynInt())).thenReturn(0.03);
+		when(userA.depositInterest(anyInt())).thenReturn(0.03);
 		when(userA.expireEra()).thenReturn("昭和");
 		when(userA.expireYear()).thenReturn(64);// when...
 
